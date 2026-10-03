@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <rect width="400" height="300" fill="#2b75a0"/>
+  <text x="200" y="40" font-family="sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">CATAN (КОЛОНИЗАТОРЫ)</text>
+  <g transform="translate(140, 70)">
+    <polygon points="60,0 120,35 120,105 60,140 0,105 0,35" fill="#e2b13c" stroke="#5d4037" stroke-width="3"/>
+    <text x="60" y="75" font-family="sans-serif" font-size="16" font-weight="bold" fill="#4e342e" text-anchor="middle">Пшеница (8)</text>
+  </g>
+  <g transform="translate(50, 120)">
+    <polygon points="60,0 120,35 120,105 60,140 0,105 0,35" fill="#2e7d32" stroke="#5d4037" stroke-width="3"/>
+    <text x="60" y="75" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Лес (6)</text>
+  </g>
+  <g transform="translate(230, 120)">
+    <polygon points="60,0 120,35 120,105 60,140 0,105 0,35" fill="#c62828" stroke="#5d4037" stroke-width="3"/>
+    <text x="60" y="75" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Глина (5)</text>
+  </g>
+  <g transform="translate(140, 175)">
+    <polygon points="60,0 120,35 120,105 60,140 0,105 0,35" fill="#78909c" stroke="#5d4037" stroke-width="3"/>
+    <text x="60" y="75" font-family="sans-serif" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">Руда (9)</text>
+  </g>
+  <circle cx="200" cy="140" r="10" fill="#d32f2f" stroke="#ffffff" stroke-width="2"/>
+  <rect x="195" y="125" width="10" height="15" fill="#d32f2f"/>
+  <line x1="200" y1="140" x2="260" y2="175" stroke="#d32f2f" stroke-width="6"/>
+</svg>
