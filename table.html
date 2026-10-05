@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>База данных и каталог настольных игр</title>
+</head>
+<body>
+
+    <nav>
+        <p><b>Навигация по сайту:</b></p>
+        <ul>
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="catan.html">Колонизаторы (Catan) — подробное описание</a></li>
+            <li><b>Каталог настольных игр (таблица и фильтры)</b></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h1 align="center">Каталог и база данных настольных игр</h1>
+    <p align="center"><i>Табличные данные для анализа, построения диаграмм, фильтрации и многоуровневой сортировки</i></p>
+
+    <details open>
+        <summary><b>График</b></summary>
+        <form action="#" method="get">
+            <p><b>Значение по оси OX:</b></p>
+            <p>
+                <label><input type="radio" name="ox" value="genre" checked> Жанр</label><br>
+                <label><input type="radio" name="ox" value="year"> Год выпуска</label><br>
+                <label><input type="radio" name="ox" value="age"> Возрастное ограничение</label>
+            </p>
+            <p><b>Значение по оси OY:</b></p>
+            <p>
+                <label><input type="checkbox" name="oy_max" value="rating" checked> Максимальный рейтинг</label><br>
+                <label><input type="checkbox" name="oy_min" value="time"> Минимальное время партии</label><br>
+                <label><input type="checkbox" name="oy_count" value="count"> Количество игр</label>
+            </p>
+            <p>
+                <button type="button">Построить</button>
+            </p>
+            <p><i>Здесь будет график</i></p>
+        </form>
+    </details>
+    <hr>
+
+    </body>
+</html>
