@@ -42,5 +42,104 @@
     </details>
     <hr>
 
-    </body>
+    <details open>
+        <summary><b>Фильтр</b></summary>
+        <form action="#" method="get">
+            <p>
+                <label>Название: <input type="text" name="filter_name" size="30"></label>
+            </p>
+            <p>
+                <label>Жанр: <input type="text" name="filter_genre" size="30"></label>
+            </p>
+            <p>
+                Год: от <input type="text" name="filter_year_from" size="6"> до <input type="text" name="filter_year_to" size="6">
+            </p>
+            <p>
+                Время партии: от <input type="text" name="filter_time_from" size="6"> до <input type="text" name="filter_time_to" size="6"> мин.
+            </p>
+            <p>
+                Рейтинг: от <input type="text" name="filter_rating_from" size="6"> до <input type="text" name="filter_rating_to" size="6">
+            </p>
+            <p>
+                <button type="button">Найти</button>
+            </p>
+        </form>
+    </details>
+    <hr>
+
+    <details open>
+        <summary><b>Сортировка</b></summary>
+        <form action="#" method="get">
+            <p>
+                Первый уровень:
+                <select name="sort_level_1">
+                    <option value="none">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="genre">Жанр</option>
+                    <option value="min_players">Мин. игроков</option>
+                    <option value="max_players">Макс. игроков</option>
+                    <option value="time">Время партии</option>
+                    <option value="age">Мин. возраст</option>
+                    <option value="year">Год выпуска</option>
+                    <option value="rating">Рейтинг</option>
+                </select>
+                <label><input type="checkbox" name="desc_1"> по убыванию?</label>
+            </p>
+            <p>
+                Второй уровень:
+                <select name="sort_level_2">
+                    <option value="none">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="genre">Жанр</option>
+                    <option value="min_players">Мин. игроков</option>
+                    <option value="max_players">Макс. игроков</option>
+                    <option value="time">Время партии</option>
+                    <option value="age">Мин. возраст</option>
+                    <option value="year">Год выпуска</option>
+                    <option value="rating">Рейтинг</option>
+                </select>
+                <label><input type="checkbox" name="desc_2"> по убыванию?</label>
+            </p>
+            <p>
+                Третий уровень:
+                <select name="sort_level_3">
+                    <option value="none">Нет</option>
+                    <option value="name">Название</option>
+                    <option value="genre">Жанр</option>
+                    <option value="min_players">Мин. игроков</option>
+                    <option value="max_players">Макс. игроков</option>
+                    <option value="time">Время партии</option>
+                    <option value="age">Мин. возраст</option>
+                    <option value="year">Год выпуска</option>
+                    <option value="rating">Рейтинг</option>
+                </select>
+                <label><input type="checkbox" name="desc_3"> по убыванию?</label>
+            </p>
+            <p>
+                <button type="button">Сортировать</button>
+            </p>
+        </form>
+    </details>
+    <hr>
+
+    <h2>Таблица: Мировые настольные игры (55 позиций)</h2>
+    <table border="1" cellpadding="6" cellspacing="0" width="100%">
+        <thead>
+            <tr align="center">
+                <th>№</th>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Мин. игроков</th>
+                <th>Макс. игроков</th>
+                <th>Время, мин</th>
+                <th>Возраст, лет</th>
+                <th>Год выпуска</th>
+                <th>Рейтинг BGG</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+</body>
 </html>
