@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>База данных и каталог настольных игр</title>
@@ -24,18 +24,18 @@
         <form>
             <p><b>Значение по оси OX:</b></p>
             <p>
-                <label><input type="radio" name="ox" value="genre" checked> Жанр</label><br>
-                <label><input type="radio" name="ox" value="year"> Год выпуска</label><br>
-                <label><input type="radio" name="ox" value="age"> Возрастное ограничение</label>
+                <label><input type="radio" name="ox" id="ox_genre" value="genre" checked> Жанр</label><br>
+                <label><input type="radio" name="ox" id="ox_year" value="year"> Год выпуска</label><br>
+                <label><input type="radio" name="ox" id="ox_age" value="age"> Возрастное ограничение</label>
             </p>
             <p><b>Значение по оси OY:</b></p>
             <p>
-                <label><input type="checkbox" name="oy_max" value="rating" checked> Максимальный рейтинг</label><br>
-                <label><input type="checkbox" name="oy_min" value="time"> Минимальное время партии</label><br>
-                <label><input type="checkbox" name="oy_count" value="count"> Количество игр</label>
+                <label><input type="checkbox" name="oy_max" id="oy_max_rating" value="max_rating" checked> Максимальный рейтинг</label><br>
+                <label><input type="checkbox" name="oy_min" id="oy_min_rating" value="min_rating"> Минимальный рейтинг</label><br>
+                <label><input type="checkbox" name="oy_avg" id="oy_avg_rating" value="avg_rating"> Средний рейтинг</label>
             </p>
             <p>
-                <button type="button">Построить</button>
+                <button type="button" id="btn_build_graph">Построить</button>
             </p>
             <p><i>Здесь будет график</i></p>
         </form>
@@ -46,22 +46,22 @@
         <summary><b>Фильтр</b></summary>
         <form>
             <p>
-                <label>Название: <input type="text" name="filter_name" size="30"></label>
+                <label>Название: <input type="text" id="filter_name" name="filter_name" size="30"></label>
             </p>
             <p>
-                <label>Жанр: <input type="text" name="filter_genre" size="30"></label>
+                <label>Жанр: <input type="text" id="filter_genre" name="filter_genre" size="30"></label>
             </p>
             <p>
-                Год: от <input type="text" name="filter_year_from" size="6"> до <input type="text" name="filter_year_to" size="6">
+                Год: от <input type="number" id="filter_year_from" name="filter_year_from" size="6"> до <input type="number" id="filter_year_to" name="filter_year_to" size="6">
             </p>
             <p>
-                Время партии: от <input type="text" name="filter_time_from" size="6"> до <input type="text" name="filter_time_to" size="6"> мин.
+                Время партии: от <input type="number" id="filter_time_from" name="filter_time_from" size="6"> до <input type="number" id="filter_time_to" name="filter_time_to" size="6"> мин.
             </p>
             <p>
-                Рейтинг: от <input type="text" name="filter_rating_from" size="6"> до <input type="text" name="filter_rating_to" size="6">
+                Рейтинг: от <input type="number" id="filter_rating_from" name="filter_rating_from" step="0.1" size="6"> до <input type="number" id="filter_rating_to" name="filter_rating_to" step="0.1" size="6">
             </p>
             <p>
-                <button type="button">Найти</button>
+                <button type="button" id="btn_filter">Найти</button>
             </p>
         </form>
     </details>
@@ -72,7 +72,7 @@
         <form>
             <p>
                 Первый уровень:
-                <select name="sort_level_1">
+                <select name="sort_level_1" id="sort_level_1">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
                     <option value="genre">Жанр</option>
@@ -83,11 +83,11 @@
                     <option value="year">Год выпуска</option>
                     <option value="rating">Рейтинг</option>
                 </select>
-                <label><input type="checkbox" name="desc_1"> по убыванию?</label>
+                <label><input type="checkbox" name="desc_1" id="desc_1"> по убыванию?</label>
             </p>
             <p>
                 Второй уровень:
-                <select name="sort_level_2">
+                <select name="sort_level_2" id="sort_level_2">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
                     <option value="genre">Жанр</option>
@@ -98,11 +98,11 @@
                     <option value="year">Год выпуска</option>
                     <option value="rating">Рейтинг</option>
                 </select>
-                <label><input type="checkbox" name="desc_2"> по убыванию?</label>
+                <label><input type="checkbox" name="desc_2" id="desc_2"> по убыванию?</label>
             </p>
             <p>
                 Третий уровень:
-                <select name="sort_level_3">
+                <select name="sort_level_3" id="sort_level_3">
                     <option value="none">Нет</option>
                     <option value="name">Название</option>
                     <option value="genre">Жанр</option>
@@ -113,10 +113,10 @@
                     <option value="year">Год выпуска</option>
                     <option value="rating">Рейтинг</option>
                 </select>
-                <label><input type="checkbox" name="desc_3"> по убыванию?</label>
+                <label><input type="checkbox" name="desc_3" id="desc_3"> по убыванию?</label>
             </p>
             <p>
-                <button type="button">Сортировать</button>
+                <button type="button" id="btn_sort">Сортировать</button>
             </p>
         </form>
     </details>
